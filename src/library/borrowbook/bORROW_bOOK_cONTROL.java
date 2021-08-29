@@ -7,12 +7,12 @@ import library.entities.Library;
 import library.entities.Loan;
 import library.entities.Member;
 
-public class Borrowbookcontrol {
+public class Borrowbookcontrol { //changed from bORROW_bOOK_cONTROL to Borrowbookcontrol
 	
 	private BorrowBookUI uI;
 	
-	private Library Library;
-	private Member member;
+	private Library Library;//Changed from lIbRaRy to Library
+	private Member member; //Changed from mEmBeR; to member
 	private enum Controlstate INITIALISED, READY, RESTRICTED, SCANNING, IDENTIFIED, FINALISING, COMPLETED, CANCELLED };
 	private Controlstate;
 	
@@ -117,8 +117,8 @@ public class Borrowbookcontrol {
 	}
 
 	
-	public voidCancel() {
-		uI.Setstate(BorrowBookUI.uI_STaTe.CANCELLED);
+	public voidCancel() { //changed from CaNcEl to cancel
+		uI.Setstate(BorrowBookUI.uI_STaTe.CANCELLED);//changed from SeT_StAtE to Setstate
 		state = Controlstate.CANCELLED;
 	}
 	
